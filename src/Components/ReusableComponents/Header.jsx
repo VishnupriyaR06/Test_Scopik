@@ -108,7 +108,7 @@ function Header() {
   return (
     <nav
       className={`${isInnerCourse ? "relative" : "fixed top-0"
-        } w-full z-50 flex items-center justify-between transition-all duration-300
+        } w-full z-50 flex items-center justify-between transition-all duration-300 overflow-hidden
           bg-white dark:bg-black shadow-md  h-[60px]
         `}
     >

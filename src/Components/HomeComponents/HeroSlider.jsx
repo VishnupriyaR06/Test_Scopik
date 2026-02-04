@@ -3,7 +3,7 @@ import slider1 from "/src/assets/newImage/header1.jpg";
 import slider2 from "/src/assets/newImage/header2.jpg";
 import slider3 from "/src/assets/newImage/header3.jpg";
 import { Link } from "react-router-dom";
-import image from "../../assets/banner 1.png"
+import image from "../../assets/bnr.png"
 const slides = [
   {
     id: 1,
@@ -30,7 +30,7 @@ const HeroSlider = () => {
   }, []);
 
   return (
-  <div className="relative w-full h-[500px] mt-19 max-w-full overflow-hidden">
+  <div className="relative w-full h-[500px] max-w-full ">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
