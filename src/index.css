@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Highlighted tile */
+.highlight-date {
+  background-color: #ffb347 !important;
+  color: white !important;
+  border-radius: 6px;
+}
+
+/* Theme-based calendar container overrides */
+.dark-calendar {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.dark-calendar abbr {
+  color: white !important;
+}
+
+.light-calendar {
+  background-color: white;
+  color: black;
+}
+
+.scopiklogo {
+  width: 40%;
+  height: 30%;
+}
+
+
+
+/* In your global CSS file */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
