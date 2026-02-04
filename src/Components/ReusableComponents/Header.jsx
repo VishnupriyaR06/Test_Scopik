@@ -118,7 +118,7 @@ function Header() {
     src={Logo}
     alt="Scopik Logo"
     className="
-      absolute left-5 top-0
+      absolute left-2 top-0
       w-[55px] md:w-[70px] lg:w-[80px]
       z-50
       rounded-lg
@@ -128,25 +128,24 @@ function Header() {
 
 
       {/* Desktop Menu */}
-      <div
-        className={`hidden lg:flex gap-14 lg:pl-20 font-manrope font-medium md:text-md lg:text-xl xl:text-2xl transition  text-gray-800 dark:text-white`}
-      >
-        <Link to="/" className={linkClass("/")}>
-          Home
-        </Link>
-        <Link to="/about" className={linkClass("/about")}>
-          About
-        </Link>
-        <Link to="/course" className={linkClass("/course")}>
-          Courses
-        </Link>
-        <Link to="/contact" className={linkClass("/contact")}>
-          Contact
-        </Link>
-        <Link to="/blog" className={linkClass("/blog")}>
-          Blog
-        </Link>
-      </div>
+      {/* Desktop Menu */}
+<div
+  className="
+    hidden lg:flex
+    absolute left-[50%] top-1/2
+    -translate-x-1/2 -translate-y-1/2
+    gap-12
+    font-manrope font-medium
+    lg:text-xl xl:text-2xl
+    text-gray-800 dark:text-white
+  "
+>
+  <Link to="/" className={linkClass("/")}>Home</Link>
+  <Link to="/about" className={linkClass("/about")}>About</Link>
+  <Link to="/course" className={linkClass("/course")}>Courses</Link>
+  <Link to="/contact" className={linkClass("/contact")}>Contact</Link>
+  <Link to="/blog" className={linkClass("/blog")}>Blog</Link>
+</div>
 
 
       {/* Right Side */}
@@ -273,7 +272,7 @@ function Header() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </div>
-            <div className="flex flex-col items-start px-6 space-y-4 text-lg">
+            <div className="flex flex-col items-start px-6 pl-30 space-y-4 text-lg">
               <div className="block lg:block">
                 <Toggle initialWhite={isHome && !bgChange} />
               </div>
